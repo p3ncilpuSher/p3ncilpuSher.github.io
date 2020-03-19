@@ -19,48 +19,64 @@
 
 </head>
 <body>
-    <h1>Ethan Dahl</h1>
+  <main>
 
-    <img src="imgs/me.jpg" alt="A portrait of Kaytlynn and I.">
 
-    <ul>
-        <li>Traveling</li>
-        <li>Dogs</li>
-        <li>Beer</li>
-    </ul>
+    <header>
+      <div>
+        <img src="" alt="logo">
+      </div>
 
-    <video controls>
-        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4">
-    </video>
+      <div>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+      </div>
+    </header>
+
+    <section class="container">
+      <figure class="vertical"><a href=""><img src="imgs/Poster_Final.jpg" alt=""></a></figure>
+      <figure class="horizontal"><a href=""><img src="imgs/Squatch_final_v1-06.png" alt=""></a></figure>
+      <figure class="big"><a href=""><img src="imgs/Fire Challenge Coin Mockup_v2.png" alt=""></a></figure>
+      <figure class="vertical"><a href=""><img src="imgs/mailer mockup.png" alt=""></a></figure>
+    </section>
+
+    <aside>
+      <div>
+        <a href="">Work</a>
+        <a href="">Bio</a>
+      </div>
+    </aside>
 
     <footer>
-        <!-- Contact form -->
-        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <p>
-              <label>Your Name: <input type="text" name="name" required/></label>   
-            </p>
+      <!-- Contact form -->
+      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" required/></label>   
+        </p>
 
-            <p>
-              <label>Your Email: <input type="email" name="email" required/></label>
-            </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" required/></label>
+        </p>
 
-            <p>
-              <label>Message: <textarea name="message" required></textarea></label>
-            </p>
+        <p>
+          <label>Message: <textarea name="message" required></textarea></label>
+        </p>
 
-            <p>
-                <input type="file" name="" id="">
-            </p>
+        <p>
+          <input type="file" name="" id="">
+        </p>
 
-            <div data-netlify-recaptcha="true"></div>
+          <div data-netlify-recaptcha="true"></div>
 
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.5.6/plyr.min.js"></script>
     <script src="js/scripts.js"></script>
+  </main>
 </body>
 </html>
