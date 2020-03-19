@@ -1,52 +1,107 @@
 body{
-    color: tomato;
+  color: tomato;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;
-    grid-auto-rows: 200px;
-}
-
-aside {
-    grid-column: 2/3;
-    grid-row: 2;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  grid-auto-rows: 200px;
 }
 
 header {
-    grid-row: 1;
-}
-
-footer {
-    grid-column: 2/5;
-    grid-row: 6;
+  background-color: cadetblue;
+  grid-column: 1/-1;
+  grid-row: 1;
 }
 
 .container {
-    display:grid;
+  align-self: baseline;
+  display: flex;
+  flex-flow: row wrap;
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 9;
+}
+
+.bio {
+  margin: 40px 40px 40px 0;
+}
+
+.form {
+  margin: 40px 40px 40px 0;
+}
+
+footer {
+  background-color: darkgoldenrod;
+  grid-column: 1/-1;
+  grid-row: 12;
+}
+
+figure {
+  background-color: antiquewhite;
+  height: 300px;
+  margin: 20px;
+  width: 300px;
+}
+  
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 756px) {
+  aside {
+    grid-row: 6;
+  }
+  
+  .container {
+    margin: 80px 0 0 0;
+  }
+
+  footer {
+    grid-row: 9;
+  }
+}
+
+@media only screen and (min-width: 1134px) {
+  main {
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  }
+
+  aside {
+    align-self: center;
+    display: flex;
+    flex-flow: column;
+    grid-column: 2/3;
+    grid-row: 2/6;
+  }
+
+  header {
+    background-color: cadetblue;
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  
+  footer {
+    background-color: burlywood;
+    grid-column: 1/-1;
+    grid-row: 6;
+  }
+  
+  .container {
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
     grid-column: 3/5;
-    grid-row: 2;
-    grid-gap:5px;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-auto-rows:200px;
-    grid-auto-flow:dense;
+    grid-row: 2/6;
+    justify-content: center;
+    margin: 80px 0 80px 0;
   }
-  
-  img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-  
-  .horizontal{
-    grid-column: span 2;
-  }
-  
-  .vertical{
-    grid-row: span 2;
-  }
-  
-  .big{
-    grid-column:span 2;
-    grid-row:span 2;
-  }
+}

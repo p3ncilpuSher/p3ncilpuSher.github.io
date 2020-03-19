@@ -42,37 +42,40 @@
     </section>
 
     <aside>
-      <div>
-        <a href="">Work</a>
-        <a href="">Bio</a>
+      <div class="bio">
+        <h3>Howdy</h3>
+        <p>I'm currently a student living in Spokane, WA. I attend Eastern Washington University where I am pursuing a Bachelor in Design. I've been in the Washington Air National Guard for eight years, and I work part time while I go to school. I'm a straight shooter and like to lend a helping hand. Maybe there's something I can help you with? Take a look at my portfolio and then...</p>
+      </div>
+
+      <div class="form">
+        <h3>give me a holler</h3>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" required/></label>   
+          </p>
+
+          <p>
+            <label>Your Email: <input type="email" name="email" required/></label>
+          </p>
+
+          <p>
+            <label>Message: <textarea name="message" required></textarea></label>
+          </p>
+
+          <p>
+            <input type="file" name="" id="">
+          </p>
+
+            <div data-netlify-recaptcha="true"></div>
+
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </div>
     </aside>
 
     <footer>
-      <!-- Contact form -->
-      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" required/></label>   
-        </p>
-
-        <p>
-          <label>Your Email: <input type="email" name="email" required/></label>
-        </p>
-
-        <p>
-          <label>Message: <textarea name="message" required></textarea></label>
-        </p>
-
-        <p>
-          <input type="file" name="" id="">
-        </p>
-
-          <div data-netlify-recaptcha="true"></div>
-
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.5.6/plyr.min.js"></script>
