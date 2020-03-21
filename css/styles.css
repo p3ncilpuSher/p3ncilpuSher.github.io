@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap');
+
 body{
-  color: tomato;
+  color: whitesmoke;
+  font-family: 'Roboto Slab', serif;
 }
 
+
+
 main {
+  background: url(../imgs/backgound.jpg) repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 5% 1fr 5%;
   grid-auto-rows: 200px;
 }
 
 header {
-  background-color: cadetblue;
   grid-column: 1/-1;
   grid-row: 1;
 }
@@ -26,7 +34,7 @@ header {
 
 aside {
   grid-column: 2;
-  grid-row: 9;
+  grid-row: 8;
 }
 
 .bio {
@@ -38,22 +46,47 @@ aside {
 }
 
 footer {
-  background-color: darkgoldenrod;
   grid-column: 1/-1;
   grid-row: 12;
 }
 
 figure {
-  background-color: antiquewhite;
+  background-image: url(../imgs/backgound2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 300px;
-  margin: 20px;
+  margin: 0px;
   width: 300px;
 }
-  
+
+.poster img {
+  height: 65%;
+  position: relative;
+  top: 53px;
+}
+
+.mailer img {
+  width: 150%;
+}
+
 img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+@media only screen and (min-width: 667px) {
+  aside {
+    grid-row: 10;
+    margin-top: 15px;
+  }
+  
+  figure {
+    height: 400px;
+    margin: 5px;
+    width: 400px;
+  }
 }
 
 @media only screen and (min-width: 756px) {
@@ -84,13 +117,11 @@ img{
   }
 
   header {
-    background-color: cadetblue;
     grid-column: 1/-1;
     grid-row: 1;
   }
   
   footer {
-    background-color: burlywood;
     grid-column: 1/-1;
     grid-row: 6;
   }
@@ -103,5 +134,25 @@ img{
     grid-row: 2/6;
     justify-content: center;
     margin: 80px 0 80px 0;
+  }
+
+  figure {
+    background-image: url(../imgs/backgound2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    margin: 20px;
+    width: 400px;
+  }
+  
+  .poster img {
+    height: 65%;
+    position: relative;
+    top: 70px;
+  }
+  
+  .mailer img {
+    width: 150%;
   }
 }
